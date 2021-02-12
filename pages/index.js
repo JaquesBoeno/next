@@ -25,7 +25,7 @@ function Contador(){
   function remover(){
     setContador(contador -1);
   }
-
+  
   return(
     <div>
       <div>{contador}</div>
