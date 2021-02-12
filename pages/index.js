@@ -1,17 +1,22 @@
 import {useState} from 'react'
+import Link from 'next/link'
 
 function Home(){
   return(
     <>
       <h1>Home</h1>
+
+      <Link href='/product'>
+        <a>Produto</a>
+      </Link>
+
       <Contador/>
     </>
   );
 }
 
 function Contador(){
-
-  const [contador,setContador] = useState(1);
+  const [contador,setContador] = useState(0);
 
   function adicionar(){
     setContador(contador +1);
